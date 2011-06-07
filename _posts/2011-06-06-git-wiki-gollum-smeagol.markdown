@@ -11,52 +11,52 @@ Gem install sudo is optional for system-wide install.
 
 ## Prerequisites
 ### enable universe repository
-```bash
+{% highlight bash %}
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo sed -i -e "s/# deb/deb/g" /etc/apt/sources.list
-```
+{% endhighlight %}
 ### install dependencies
-```bash
+{% highlight bash %}
 sudo apt-get update
 sudo apt-get -y install ruby rubygems ruby-dev libxml2-dev libxslt-dev
-```
+{% endhighlight %}
 
 ## Install Gollum and/or Smeagol
-```bash
+{% highlight bash %}
 sudo gem install gollum --no-ri --no-rdoc
 
 sudo gem install smeagol --no-ri --no-rdoc
-```
+{% endhighlight %}
 
 ### Markdown support
-```bash
+{% highlight bash %}
 sudo gem install rdiscount --no-ri --no-rdoc
-```
+{% endhighlight %}
 
 ### Syntax highlighting
-```bash
+{% highlight bash %}
 sudo apt-get install python-pygments
-```
+{% endhighlight %}
 
 ## Update PATH and reload .bashrc
-```bash
+{% highlight bash %}
 echo "export PATH=$PATH:/var/lib/gems/1.8/bin" >> ~/.bashrc
 source ~/.bashrc
-```
+{% endhighlight %}
 
 ## Clone Wiki repository
 ### Public Git URL
-```bash
+{% highlight bash %}
 git clone git://github.com/mchelen/michaelchelennet.wiki.git
-```
+{% endhighlight %}
 
 
 ## Start Gollum
 ### Change to the directory with the Git repo and start repo.
-```bash
+{% highlight bash %}
 cd michaelchelennet.wiki
 gollum
-```
+{% endhighlight %}
 
 
 
@@ -72,9 +72,9 @@ gollum
 ## Install Smeagol
 Smeagol
 https://github.com/benbjohnson/smeagol
-```
+{% highlight bash %}
 sudo gem install smeagol
-```
+{% endhighlight %}
 
 Smeagol supports multiple repositories
 
@@ -86,7 +86,7 @@ Markdown is easier to read and write than HTML
 ### Hello World
 - Bar1
 
-```html
+{% highlight bash %}
 <html>
   <body>
     <h3>Hello World</h1>
@@ -95,9 +95,9 @@ Markdown is easier to read and write than HTML
     </li>
   </body>
 </html>
-```
+{% endhighlight %}
 
-```markdown
+```
 ### Hello World
 - Bar1
 ```
