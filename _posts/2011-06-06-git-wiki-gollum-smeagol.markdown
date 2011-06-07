@@ -86,7 +86,7 @@ Markdown is easier to read and write than HTML
 ### Hello World
 - Bar1
 
-{% highlight bash %}
+{% highlight html %}
 <html>
   <body>
     <h3>Hello World</h1>
@@ -97,11 +97,12 @@ Markdown is easier to read and write than HTML
 </html>
 {% endhighlight %}
 
-```
-### Hello World
-- Bar1
-```
+test
 
+{% highlight html %}
+    ### Hello World
+    - Bar1
+{% endhighlight %}
 
 ## Sources
 
