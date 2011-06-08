@@ -1,6 +1,11 @@
 --- 
 layout: article
-title: Git Wiki with Gollum and Smeagol1
+uuid: 20e01f68-0f3e-4d92-a3a4-e04f2ea01229
+title: Git Wiki with Gollum and Smeagol
+name: git-wiki-gollum-smeagol
+created_at: 2011-06-01
+updated_at: 2011-06-01
+categories: unfinished
 ---
 
 Git is a revision control system. Gollum is a webserver to work with the repository locally. Smeagol is webserver to publically display the repository pages.
