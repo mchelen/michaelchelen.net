@@ -1,4 +1,4 @@
-destination: ./jekyll-aid-blog
+destination: ./michaelchelen.net
 pygments: true
 markdown: rdiscount
 exclude: mkdocument
@@ -7,7 +7,7 @@ permalink: /articles/:title.html
 # leave blank for /
 url_root: 
 # Options used in Jekyll-base
-#base_dir: /
+base_dir: /michaelchelen.net
 #ga_id: UA_XXXXXXXX-1
 #google_search_api_key: 1238975398735
 #google_search_site_url: fastr.github.com
