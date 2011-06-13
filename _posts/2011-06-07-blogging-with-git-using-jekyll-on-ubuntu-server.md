@@ -8,40 +8,24 @@ updated_at: 2011-06-07
 categories: unfinished
 ---
 
-You just created edit/blogging-with-git-using-jekyll-on-ubuntu-server.md.
-
-Notice the UPDATED ME in the categories above.
-Please change that to be a category.
-
-Your article starts after the last -- above.
 
 
-Remember
-    
-    Code blocks are indented by 4 spaces
+# Install dependencies
 
-Paragraphs have two spaces between lines.
-Sentances have one.
+git ruby
+sudo gem install rdiscount
+sudo apt-get install python-pygments
 
-  * lists can be bullet
-  * like this
+# Install Jekyll
+sudo gem install jekyll
 
-or
 
-  1. can be numbered
-  2. like this
+add /var/lib/gems/1.8/bin/ to your path.
 
-Large Header
-====
+# Start Server
 
-Small Header
-----
 
->  block quotes have
->  a carret and two spaces
->
->    and can contain code
->
->  * bullets
->
->  1. etc
+DocumentRoot /home/ubuntu/example.com/
+
+# Deploy Over SCP
+
