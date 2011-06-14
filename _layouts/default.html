@@ -24,19 +24,32 @@
 </head>
 
 <body>
-  <h1 id="header"><a href="{{ site.url_root }}/">[Home]</a> {{ page.title }}</h1>
 
-  <div id="article">
-    {{ content }}
+<!-- comment -->
+  <div style="float:left;">
+    <h1 id="header"><a href="{{ site.url_root }}/">[Home]</a> {{ page.title }}</h1>
+    <div id="article">
+      {{ content }}
+    </div>
+    <script type="text/javascript">
+    var disqus_shortname = 'michaelchelennet';
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'http://disqus.com/forums/michaelchelennet/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
   </div>
 
-  <script type="text/javascript">
-  var disqus_shortname = 'michaelchelennet';
-  (function () {
-    var s = document.createElement('script'); s.async = true;
-    s.src = 'http://disqus.com/forums/michaelchelennet/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  }());
-  </script>
+<!-- disqus recent comments -->
+    <div id="recentcomments" class="dsq-widget rightblock"><h2 class="dsq-widget-title">Recent Comments</h2><script type="text/javascript" src="http://michaelchelennet.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script></div><a href="http://disqus.com/">Powered by Disqus</a>  
+    </div>
+
+<!-- disqus popular threads -->
+<div id="popularthreads" class="dsq-widget rightblock"><h2 class="dsq-widget-title">Popular Threads</h2><script type="text/javascript" src="http://michaelchelennet.disqus.com/popular_threads_widget.js?num_items=5"></script></div><a href="http://disqus.com/">Powered by Disqus</a>
+
+
+  
+
 </body>
 </html>
