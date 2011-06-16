@@ -5,21 +5,14 @@ title: Android SSH Key Auth with ConnectBot
 name: android-connectbot-ssh-key-auth-howto.md
 created_at: 2010-12-07
 updated_at: 2010-12-07
-categories: unfinished android ssh connectbot
+categories: android ssh connectbot
 ---
-
-
-
-
-Title: 
-Author: Mike Chelen
-Date: 12/07/2010
-Categories: 
-
 
 ConnectBot is an open source SSH client for Android. SSH provides secure access to a remote server. 
 
 Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. 
+
+<!--more-->
 
 The key can be disabled at any time. This method can be performed entirely from your Android handset if you currently have password access to an SSH server. ConnectBot supports shell login and port forwarding, and file transfer is planned. Tested with ConnectBot 1.7.0, Android 2.2, and Ubuntu 10.10 Beta.
 
@@ -27,9 +20,9 @@ The key can be disabled at any time. This method can be performed entirely from 
 
 # Install Open SSH server
 SSH server must be installed on the remote system. Key authentication is usually enabled by default. To install in Ubuntu:
-```
-sudo apt-get install openssh-server
-```
+
+    sudo apt-get install openssh-server
+
 # Start ConnectBot
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.home.png)
 
@@ -96,29 +89,30 @@ For example:
 
 # Set Permissions for authorized_keys
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.authorized.keys.chmod.png)
+
 The `.ssh/authorized_keys` file must be writeable only by the owner. Set the permissions to `644` which means `rw-r--r--` if it is not already that way.
 
     chmod 644 .ssh/authorized_keys
 
 # Disconnect
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.disconnect.png)
+
 Disconnect from the server. It will be now be listed on the screen.
 
 # Test Connection
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.test.png)
+
 Connect to the server again. While logging in it will say that public key authentication is being attempted:
-```
-Attempting "publickey" authentication with any in-memory public keys
-```
+
+> Attempting "publickey" authentication with any in-memory public keys
+
 If the key is working, no username or password will be required to complete login. The SSH key authentication is now configured!
 
 
 
 # Optional: Disable Key
 If the device is lost or access should to be disabled at any time, remove the key from the `authorized_keys` file. Use any text editor, or sed, to find the appropriate line. With a key named htc_aria for example:
-```
-cd ~/.ssh
-sed '/htc_aria$/d' authorized_keys | tee authorized_keys
-```
 
+    cd ~/.ssh
+    sed '/htc_aria$/d' authorized_keys | tee authorized_keys
 

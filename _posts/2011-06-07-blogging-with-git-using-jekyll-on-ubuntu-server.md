@@ -12,7 +12,7 @@ categories: unfinished
 
 # Install dependencies
 
-git ruby
+sudo apt-get install git ruby
 sudo gem install rdiscount
 sudo apt-get install python-pygments
 
@@ -28,4 +28,17 @@ add /var/lib/gems/1.8/bin/ to your path.
 DocumentRoot /home/ubuntu/example.com/
 
 # Deploy Over SCP
+
+
+# Recommended Templates
+https://github.com/bobschi/HTML5-Boilerplate-Jekyll-Template
+https://github.com/btbytes/jekyll_960
+https://github.com/coolaj86/jekyll-aid/
+https://github.com/jamesyu/jamesyu_jekyll_template
+https://github.com/tedkulp/jekyll-template
+https://github.com/raphinou/jekyll-base
+
+
+
+https://github.com/mojombo/jekyll/wiki/Sites
 

@@ -3,6 +3,7 @@ pygments: true
 markdown: rdiscount
 exclude: mkdocument
 lsi: true
+auto: true
 permalink: /articles/:title.html
 # leave blank for /
 url_root: 

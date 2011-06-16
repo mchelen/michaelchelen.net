@@ -15,7 +15,7 @@ a:hover {
   border-bottom: 1px solid;
 }
 #article, #header {
-  width: 950px;
+/*  width: 950px; */
   background-color: #FFF;
   padding: 10px;
   padding-left: 15px;
@@ -26,7 +26,7 @@ a:hover {
 }
 pre {
   font-size: 9pt;
-  width: 900px;
+/*  width: 900px; */
   padding: 5px;
   padding-right: 10px;
   padding-left: 10px;
@@ -45,7 +45,7 @@ overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not
 white-space: pre-wrap; css-3 */
 white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
 word-wrap: break-word; /* Internet Explorer 5.5+ */
-white-space : normal; /* crucial for IE 6, maybe 7? */
+/* white-space : normal; */ /* crucial for IE 6, maybe 7? */
   
 }
 div > ul { /* for unordered lists */
@@ -100,4 +100,33 @@ div.rightblock {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+}
+
+blockquote { 
+  background-color: #FFD;
+  box-shadow: 5px 5px 5px #888;
+  -webkit-box-shadow: 2px 2px 2px #888;
+  -moz-box-shadow: 5px 5px 5px #888;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+code {
+  background: none repeat scroll 0 0 black;
+  border-radius: .15em;
+  -moz-border-radius: .15em;
+  -webkit-border-radius: .15em;
+  padding-left: .25em;
+  padding-right: .25em;
+  color: #F8F8F8;
+  font: 1em/1.3em 'Lucida Console','courier new',monospace;
+ 
+ 
+ 
+ 
+  
+  
 }
