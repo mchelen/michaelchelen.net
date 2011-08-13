@@ -78,7 +78,7 @@ Additional Site Examples: [https://github.com/mojombo/jekyll/wiki/Sites]
 
 Build new AMI
 Request spot instance through GUI or CLI.
-For example, 1 micro instance at $0.15 max price default security group:
+For example, 1 micro instance at $0.15 max price in the default security group:
     ec2-request-spot-instances ami-1234567 -p 0.15 -n 1 -g "default" -k ec2_key -t t1.micro
 
 # Start Jekyll
