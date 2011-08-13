@@ -14,7 +14,7 @@ a {
 a:hover {
   border-bottom: 1px solid;
 }
-#article, #header {
+#article, #header, #ad {
 /*  width: 950px; */
   background-color: #FFF;
   padding: 10px;
@@ -24,6 +24,12 @@ a:hover {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+#adsense {
+  margin-left: auto;
+  margin-right: auto;
+  width: 728px;
+}
+
 pre {
   font-size: 9pt;
 /*  width: 900px; */
@@ -67,7 +73,7 @@ ul.related {
 }
 
 
-h1 {
+/* h1 {
   background-color: #F3E9E9;
   box-shadow: 5px 5px 5px #888;
   -webkit-box-shadow: 2px 2px 2px #888;
@@ -77,6 +83,7 @@ h1 {
   -webkit-border-radius: 5px;
   padding: 0.1em 0.2em;
 }
+*/
 
 /*
 h2 {

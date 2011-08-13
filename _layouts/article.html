@@ -3,7 +3,20 @@ layout: default
 ---
 <div>
   {{ content }}
-
+    <div id="ad">
+        <div id="adsense">
+            <script type="text/javascript"><!--
+                google_ad_client = "ca-pub-6150832828352770";
+                /* michaelchelen.net leaderboard */
+                google_ad_slot = "0145948228";
+                google_ad_width = 728;
+                google_ad_height = 90;
+                //-->
+            </script>
+            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </div>
+    </div>
   {% if page.uuid %}
   <div id="disqus_thread"></div>
   <script type="text/javascript">
