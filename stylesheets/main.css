@@ -14,7 +14,7 @@ a {
 a:hover {
   border-bottom: 1px solid;
 }
-#article, #header, #ad {
+#article, #header, #ad, #disqus_thread, div.footer {
 /*  width: 950px; */
   background-color: #FFF;
   padding: 10px;
@@ -28,6 +28,10 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 728px;
+}
+#content {
+  float:left;
+  width:70%;
 }
 
 pre {
