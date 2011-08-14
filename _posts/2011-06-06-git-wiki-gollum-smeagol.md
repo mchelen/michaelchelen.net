@@ -10,6 +10,7 @@ categories: unfinished
 
 Git is a revision control system. Gollum is a webserver to work with the repository locally. Smeagol is webserver to publically display the repository pages.
 
+<!--more-->
 
 Gem install sudo is optional for system-wide install.
 

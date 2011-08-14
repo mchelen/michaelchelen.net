@@ -8,6 +8,11 @@ updated_at: 2011-06-07
 categories: unfinished
 ---
 
+
+Jekyll is a Git compatible static site generator that can be installed on Ubuntu Server.
+
+<!--more-->
+
 # Optional EC2 Start
 The Amazon EC2 service is an example for a host server.
 Tested with micro instance EBS `ami-06ad526f`.
@@ -89,3 +94,14 @@ Or use _config.yml to specify options.
 # Fetch Latest Version
     cd ~/www.example.com/
     git pull
+    
+    
+    
+# Optional: Speed up LSI        
+    
+    aptitude install libocamlgsl-ocaml-dev libgsl-ruby1.8   
+http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/
+    
+    
+    
+    
