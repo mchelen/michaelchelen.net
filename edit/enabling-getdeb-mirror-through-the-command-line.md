@@ -1,1 +1,0 @@
-../_posts/2011-07-04-enabling-getdeb-mirror-through-the-command-line.md
