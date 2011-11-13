@@ -1,0 +1,1 @@
+../_posts/2011-10-03-moving-from-amazon-ec2-to-s3.md
