@@ -6,6 +6,7 @@ name: host-a-jekyll-powered-website-on-amazon-s3
 created_at: 2011-09-28
 updated_at: 2011-09-28
 categories: unfinished
+published: false
 ---
 
 You just created edit/host-a-jekyll-powered-website-on-amazon-s3.md.

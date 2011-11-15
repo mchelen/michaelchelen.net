@@ -6,42 +6,52 @@ name: get-started-developing-php-with-virtualbox
 created_at: 2011-09-08
 updated_at: 2011-09-08
 categories: unfinished
+published: false
 ---
 
-You just created edit/get-started-developing-php-with-virtualbox.md.
-
-Notice the UPDATED ME in the categories above.
-Please change that to be a category.
-
-Your article starts after the last -- above.
 
 
-Remember
+
+## Install VirtualBox
+
+### Download
+
+### x86 / x64
+
+
+
+## Download Linux CD
+
+
+
+## Create new VM
+
+### Mount CD image
+
+### 
+
+
+## Install LAMP Stack
+
+task-sel
+apache, mysql, php
++ ssh
+
+## Port Forwarding
+
+## Guest Additions
+
+    sudo apt-get install dkms build-essential
+
+    sudo reboot
     
-    Code blocks are indented by 4 spaces
+Mount guest additions
 
-Paragraphs have two spaces between lines.
-Sentances have one.
+    sudo mount /dev/cdrom /media/cdrom
 
-  * lists can be bullet
-  * like this
+    cd /media/cdrom
+    
+    sudo ./VBoxLinuxAdditions.run 
 
-or
+https://mylinuxramblings.wordpress.com/2010/06/03/installing-virtualbox-guest-additions-on-ubuntu-server-10-04/
 
-  1. can be numbered
-  2. like this
-
-Large Header
-====
-
-Small Header
-----
-
->  block quotes have
->  a carret and two spaces
->
->    and can contain code
->
->  * bullets
->
->  1. etc
