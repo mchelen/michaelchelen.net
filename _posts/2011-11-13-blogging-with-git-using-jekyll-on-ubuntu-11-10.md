@@ -18,9 +18,10 @@ This is the system where you will be doing the editing, usually your desktop.
    
     
 ## Install Dependencies ##
+These are required for proper compilation of Ruby.
 
-sudo apt-get install git curl
-{% endhighlight %}
+    sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+
     
 ## Install RVM ##
 For installation of the latest version of Ruby on Ubuntu we will use RVM, the [Ruby Version Manager](http://beginrescueend.com/).
@@ -29,29 +30,18 @@ We need a more recent version of Ruby because an error exists between directory_
 
 https://github.com/TwP/directory_watcher/issues/10#issuecomment-2327743
 
-`bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)`
+The Ubuntu package `ruby-rvm` might also work but doesn't include as recent a version of RVM.
 
-There is a `ruby-rvm` Ubuntu package but it didn't seem to work when performing actual ruby install.
-
-If you are planning on using RVM with multiple users, save some time and install RVM system-wide.
-
-`sudo bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )`
-
-
-
-
+    bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
 # install ruby
-`rvm install ruby-1.9.2`
-
-# logout and log back in
+    rvm install ruby-1.9.3
 
 # select version to use
-
-`rvm use ruby-1.9.2`
+    rvm use ruby-1.9.3
 
 # test
-`ruby -v`
+    ruby -v
 
 
 # install jekyll
