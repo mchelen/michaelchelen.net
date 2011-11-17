@@ -6,6 +6,7 @@ name: how-to-setup-a-virtual-development-environment-with-virtualbox
 created_at: 2011-11-15
 updated_at: 2011-11-15
 categories: unfinished
+published: false
 ---
 
 username: ubuntu
@@ -16,4 +17,4 @@ password: ubuntu
     
     source: http://linuxcommando.blogspot.com/2008/10/how-to-disable-ssh-host-key-checking.html
     
-    
+    sshfs ubuntu@localhost:/home/ubuntu/ -p 2222 vbox/ -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
