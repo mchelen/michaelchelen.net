@@ -13,7 +13,7 @@ Jekyll is a Git compatible static site generator that can be installed on Ubuntu
 
 <!--more-->
 
-# Install Jekyll Dependencies
+# Install Dependencies
     sudo apt-get install git ruby rubygems python-pygments
     sudo gem install rdiscount --no-rdoc --no-ri
 The --no-rdoc --no-ri options are suggested for lightweight server installs.
@@ -21,25 +21,20 @@ The --no-rdoc --no-ri options are suggested for lightweight server installs.
 # Install Jekyll
     sudo gem install jekyll --no-rdoc --no-ri
 
-Add the Gems directory `/var/lib/gems/1.8/bin/` to your path.
-{% highlight bash %}
-export PATH=/var/lib/gems/1.8/bin:$PATH
-{% endhighlight %}
-Make this change permanent by adding the line to `~/.profile`
-https://help.ubuntu.com/community/RubyOnRails#Installing%20RubyGems
+The [Ubuntu package](https://help.ubuntu.com/community/RubyOnRails#Installing%20RubyGems) uses a Gem directory of `/var/lib/gems/1.8/bin/` which must be added to your path.
+    export PATH=/var/lib/gems/1.8/bin:$PATH
 
+Make this change permanent by adding the line to `~/.profile`
 
 # Optional
 
-## Speed up LSI        
+## Speed up LSI
+Accelerate LSI by [using GSL](http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/)        
     sudo apt-get install libocamlgsl-ocaml-dev libgsl-ruby1.8   
-http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/
-
-
-    
-## Install Kramdown    
-sudo gem1.8 install kramdown  --no-rdoc --no-ri
-http://kramdown.rubyforge.org/installation.html
+  
+## Install Kramdown
+Kramdown is a Markdown renderer alternative to Rdiscount. 
+    sudo gem install kramdown --no-rdoc --no-ri
 
 # Recommended Templates
 - [HTML5-Boilerplate-Jekyll-Template](https://github.com/bobschi/HTML5-Boilerplate-Jekyll-Template)
@@ -51,4 +46,4 @@ http://kramdown.rubyforge.org/installation.html
 - [jekyll-template](https://github.com/tedkulp/jekyll-template)
 - [jekyll-base](https://github.com/raphinou/jekyll-base)
 
-Additional Site Examples: [https://github.com/mojombo/jekyll/wiki/Sites]    
+[Additional Site Examples](https://github.com/mojombo/jekyll/wiki/Sites)

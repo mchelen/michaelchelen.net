@@ -4,19 +4,18 @@ uuid: 20e01f68-0f3e-4d92-a3a4-e04f2ea01229
 title: Android SSH Key Auth with ConnectBot
 name: android-connectbot-ssh-key-auth-howto.md
 created_at: 2010-12-07
-updated_at: 2010-12-07
+updated_at: 2011-11-17
 categories: android ssh connectbot
 ---
 
-ConnectBot is an open source SSH client for Android. SSH provides secure access to a remote server. 
-
-Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. 
+ConnectBot is an open source SSH client for Android. SSH provides secure access to a remote server. Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. The key can be disabled at any time.
 
 <!--more-->
 
-The key can be disabled at any time. This method can be performed entirely from your Android handset if you currently have password access to an SSH server. ConnectBot supports shell login and port forwarding, and file transfer is planned. Tested with ConnectBot 1.7.0, Android 2.2, and Ubuntu 10.10 Beta.
-
 ![ConnectBot running on HTC Aria from AT&T.](/images/android-connectbot-ssh-key-auth-howto/connectbot.htc.aria.300px.png)
+
+This method can be performed entirely from your Android handset if you currently have password access to an SSH server. ConnectBot supports shell login and port forwarding, and file transfer is planned. Tested with ConnectBot 1.7.0, Android 2.2, and Ubuntu 10.10 Maverick Beta.
+
 
 # Install Open SSH server
 SSH server must be installed on the remote system. Key authentication is usually enabled by default. To install in Ubuntu:
@@ -46,15 +45,15 @@ Click Menu then Generate. We are going to create a new key. This allows us to sp
 # Generate Pubkey Settings
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.settings.png)
 
-The new pubkey settings. Most of the defaults are fine. We will create a 1024 bit RSA key. For added security, use a password for the key. This will let you to securely use the same password on all servers where your key is authorized.
+The new pubkey settings. Most of the defaults are fine. We will create a 1024 bit RSA key. 
 
 # Example Settings
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.settings.example.png)  
-You can call your key anything you like. I have named mine after the device, htc_aria. Enable "Load key at start" to have the key automatically loaded.
+You can call your key anything you like. I have named mine after the device, htc_aria. Enable "Load key at start" to have the key automatically loaded by ConnectBot.
 
 # Collect Entropy
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.entropy.png)  
-Random numbers are used to generate the key. Move your finger around the screen until enough is generated.
+Random numbers are used to generate the key. Move your finger around the screen until enough randomness has been collected.
 
 # New Pubkey Created
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.example.png)  
@@ -62,7 +61,7 @@ The new key has been created. It is unlocked and will be used by ConnectBot auto
 
 # Copy Pubkey
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.details.png)  
-Do a long press on the key to bring up a menu. We want to copy the public portion on the remote server. Click "Copy public key"
+Long press on the new key to bring up a menu. Click "Copy public key" This public part of the key will be copied onto the remote server. 
 
 # Connect to Server
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.connect.to.server.png)  
