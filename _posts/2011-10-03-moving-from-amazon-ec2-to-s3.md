@@ -6,6 +6,7 @@ name: moving-from-amazon-ec2-to-s3
 created_at: 2011-10-03
 updated_at: 2011-10-03
 categories: unfinished
+published: false
 ---
 
 Since the site is now using Jekyll, a static site generator, it is possible to host it on S3.
