@@ -17,14 +17,16 @@ The [Ruby Version Manager](http://beginrescueend.com/) can be used to install th
 
 Although there is a Ruby package for Ubuntu [an error exists](https://github.com/TwP/directory_watcher/issues/10#issuecomment-2327743) between the directory_watcher gem and RubyGems 1.3.7.
 
-
+### Install RVM Dependencies ###
+The RVM install script requires CURL
+    sudo apt-get install curl
 ### Install RVM ###
 The [RVM install](https://rvm.beginrescueend.com/rvm/install/) script will install RVM for the current user.
 
     bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
 # Ruby #
-### Install Dependencies ###
+### Install Ruby Dependencies ###
 These packages are required for working compilation of Ruby. Use `rvm requirements` to generate this list yourself.
 
     sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
