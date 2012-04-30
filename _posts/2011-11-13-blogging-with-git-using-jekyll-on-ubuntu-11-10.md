@@ -13,23 +13,32 @@ Jekyll generates a complete website from local text files. The generated files c
 <!--more--> 
     
 # RVM #
-The [Ruby Version Manager](http://beginrescueend.com/) can be used to install the latest version of Ruby on Ubuntu.
+The [Ruby Version Manager](https://rvm.io/) can be used to install the latest version of Ruby on Ubuntu.
 
 Although there is a Ruby package for Ubuntu [an error exists](https://github.com/TwP/directory_watcher/issues/10#issuecomment-2327743) between the directory_watcher gem and RubyGems 1.3.7.
 
 ### Install RVM Dependencies ###
 The RVM install script requires CURL
     sudo apt-get install curl
-### Install RVM ###
-The [RVM install](https://rvm.beginrescueend.com/rvm/install/) script will install RVM for the current user.
+### RVM Install Script###
+The [RVM install](https://rvm.io/rvm/install/) script will install the stable version of RVM for the current user. After RVM is installed Ruby will automatically be installed.
 
-    bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+    curl -L get.rvm.io | bash -s stable --ruby
 
-# Ruby #
+
+
 ### Install Ruby Dependencies ###
 These packages are required for working compilation of Ruby. Use `rvm requirements` to generate this list yourself.
 
     sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+
+
+
+
+Enable RVM commands in the current shell.
+    source ~/.rvm/scripts/rvm
+
+# Ruby #
 
 ### Install Ruby
     rvm install ruby-1.9.3
