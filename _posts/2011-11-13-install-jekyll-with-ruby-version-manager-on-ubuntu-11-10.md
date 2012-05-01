@@ -8,7 +8,7 @@ updated_at: 2012-05-01
 categories: git jekyll ruby ubuntu
 ---
 
-Jekyll generates a complete website such as a blog from local text files. The generated files can be served by any standard webserver. Markup languages such as Markdown are supported through Gems. Jekyll is made to be compatible with version control systems such as Git. Tested on Ubuntu Server 11.10 Oneiric
+Jekyll generates a complete website such as a blog from plain text files. The generated files can be served by any standard webserver. Markup languages such as Markdown are supported through Gems. Jekyll is made to be compatible with version control systems such as Git. These steps will install Ruby and Jekyll for the current user. Tested on Ubuntu Server 11.10 Oneiric
 
 <!--more--> 
 
@@ -16,7 +16,6 @@ Jekyll generates a complete website such as a blog from local text files. The ge
 # RVM #
 The [Ruby Version Manager](https://rvm.io/) can be used to install the latest version of Ruby on Ubuntu.
 
-Although there is a Ruby package for Ubuntu [an error exists](https://github.com/TwP/directory_watcher/issues/10#issuecomment-2327743) between the directory_watcher gem and RubyGems 1.3.7.
 
 ### Update System ###
 Make sure the system is fully updated.
@@ -71,13 +70,12 @@ Two alternative Markdown renderers are Rdiscount and Kramdown.
 
 ### SASS and rb-inotify
 Needed for some themes.
-        gem install sass --no-rdoc --no-ri
-        gem install rb-inotify --no-rdoc --no-ri
+    gem install sass --no-rdoc --no-ri
+    gem install rb-inotify --no-rdoc --no-ri
 
 
 ### Clone Repository ###
 Download the latest copy of your website. Use the URL for your project.
-
 
 Read-only access to the repository, such as on servers.
     git clone git://github.com/mchelen/michaelchelen.net.git
@@ -89,14 +87,16 @@ Write access to the repository, for when creating and editing web pages.
 ### Start Jekyll ###
 
     cd michaelchelen.net
-
     jekyll
 
-The site will be run according to the settings in the '_config.yml' file.
+The website files will be generated in the `_site` directory. These can be served by any standard webserver such as Apache.
 
-These can be overriden through the command line. For example the website can be viewed through the Jekyll server instead of installing another web server such as Apache.
+The site will be run according to the settings in the `_config.yml` file.
 
-    jekyll --server
+These can be overriden through the command line. For example the website can be viewed through the Jekyll server using `--server` instead of installing another web server. The `--auto` option will cause the website to be regenerated if any files are edited.
+
+    jekyll --server --auto
+
 
 
 
