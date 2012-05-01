@@ -91,9 +91,9 @@ Write access to the repository, for when creating and editing web pages.
 
 The website files will be generated in the `_site` directory. These can be served by any standard webserver such as Apache.
 
-The site will be run according to the settings in the `_config.yml` file.
+Site settings are stored in the `_config.yml` file.
 
-These can be overriden through the command line. For example the website can be viewed through the Jekyll server using `--server` instead of installing another web server. The `--auto` option will cause the website to be regenerated if any files are edited.
+These settings can be overriden through the command line. For example the website can be viewed through the Jekyll server using `--server` instead of another web server. The `--auto` option will cause the website to be regenerated if any files are edited.
 
     jekyll --server --auto
 
