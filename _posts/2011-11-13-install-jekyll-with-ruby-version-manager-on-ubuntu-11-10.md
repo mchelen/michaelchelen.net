@@ -40,8 +40,8 @@ Use `rvm requirements` to generate a list of Ruby dependencies. In Ubuntu 11.10 
     sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
 
 # Ruby #
-
-rvm install ruby
+Now use RVM to install the default version of Ruby.
+    rvm install ruby
 
 ### Test Ruby ###
     ruby -v
