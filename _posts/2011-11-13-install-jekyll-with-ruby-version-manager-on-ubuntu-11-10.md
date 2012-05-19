@@ -27,7 +27,7 @@ The RVM install script requires CURL
 ### RVM Install Script ###
 The [RVM install](https://rvm.io/rvm/install/) script will install the stable version of RVM for the current user. After RVM is installed Ruby will automatically be installed.
 
-   curl -L get.rvm.io | bash -s stable
+    curl -L get.rvm.io | bash -s stable
 
 
 Enable RVM commands in the current shell.
