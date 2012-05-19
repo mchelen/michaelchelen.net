@@ -205,7 +205,7 @@ http://cssdeck.com/item/322/github-fork-me-on
 }
 
 .forkme:hover {
-	color: #497e43;
+	text-decoration: underline;
 	border: 0;
 }
 
