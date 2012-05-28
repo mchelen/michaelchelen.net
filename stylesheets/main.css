@@ -209,4 +209,12 @@ http://cssdeck.com/item/322/github-fork-me-on
 	border: 0;
 }
 
+h3.article_title {
+    margin-bottom: .1em;
+}
 
+div.article_meta {
+font-style:italic;
+float:right;
+margin-right: 1em;
+}
