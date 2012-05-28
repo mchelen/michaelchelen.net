@@ -1,7 +1,7 @@
 module PostMore
-  def postmorefilter(input, url, text)
+  def postmorefilter(input)
     if input.include? "<!--more-->"
-      input.split("<!--more-->").first + "<p class='more'><a href='#{url}'>#{text}</a></p>"
+      input.split("<!--more-->").first
     else
       input
     end
