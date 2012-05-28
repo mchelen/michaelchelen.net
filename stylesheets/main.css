@@ -210,11 +210,13 @@ http://cssdeck.com/item/322/github-fork-me-on
 }
 
 h3.article_title {
-    margin-bottom: .1em;
+    margin-bottom: .3em;
 }
 
 div.article_meta {
 font-style:italic;
-float:right;
-margin-right: 1em;
+}
+
+div.body p {
+margin-top: 0.3em;
 }
