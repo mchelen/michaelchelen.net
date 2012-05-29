@@ -112,6 +112,7 @@ div.rightblock {
   background: white;
   width: 25%;
   padding: 1em;
+  clear: right;
   margin-top: 1.1em;
   border-radius: 5px;
   -moz-border-radius: 5px;
