@@ -21,4 +21,9 @@ title: michaelchelen.net
 </div>
 
 
-
+<h2>Categories:</h2>
+<ul>
+{% for category in site.categories %}
+  <li><a href="./all.html#{{ category | first }}">{{ category | first }}</a></li>
+{% endfor %}
+</ul>
