@@ -9,11 +9,11 @@ categories: unfinished
 published: true
 ---
 
-Installing Jekyll is easier than ever on Ubuntu 12.04 and everything seems to work out of the box.
+Installing Jekyll is easier than ever on Ubuntu 12.04 using apt-get and everything works out of the box.
+<!--more--> 
 
 Install Jekyll
 ----
-
 Install Rubygems
     sudo apt-get install rubygems
 
@@ -22,16 +22,18 @@ Install Jekyll and the optional Rdiscount gem
 
 Start Jekyll
 ----
-Jekyll can be run with
+Jekyll can be run inside the website directory:
     jekyll
 
-To run a webserver with the Jekyll content you can specify the option
+Then visit [http://localhost:4000]() in your web browser to see your Jekyll site.
+
+If the Jekyll webserver is not started by default, you can specify the `--server` option:
     jekyll --server
 
-Then visit [http://localhost:4000]()
+Additional Options
+----
 
-
-You can choose the port, for example when running multiple Jekyll instances:
+The default port `4000` can be changed, for example when running multiple Jekyll instances:
     jekyll --server 4001
 
 Then visit [http://localhost:4001]()
