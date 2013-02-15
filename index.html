@@ -8,16 +8,14 @@ title: michaelchelen.net
 </div>
 
 
-{% for post in site.posts limit:3 %}
+{% for post in site.posts limit:5 %}
     <div class="post">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      
+        <h3 class="article_title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <span class="meta">
+            Posted {{ post.date | date_to_string }}</a>
+        </span>
         <div class="body">
-            {{ post.content | postmorefilter: post.url, "Read the rest of this entry" }}
-        </div>
-        
-        <div class="meta">
-            Posted on <a href="{{ post.url }}">{{ post.date | date_to_string }}</a>
+            {{ post.content | postmorefilter }}
         </div>
     </div>
 {% endfor %}
@@ -50,5 +48,3 @@ title: michaelchelen.net
 <!-- h2><a href="{{ post.url }}">{{ post.title }}</a></h2 -->
 <!-- {{ post.content }} -->
 {% endfor %}
-
-Page generated: {{ site.time | date_to_string }}
