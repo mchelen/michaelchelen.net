@@ -3,7 +3,6 @@ layout: default
 title: michaelchelen.net
 ---
 
-<<<<<<< HEAD
 <div>
 <a href="./all.html">View All Posts</a>
 </div>
@@ -15,33 +14,19 @@ title: michaelchelen.net
         <span class="meta">
             Posted {{ post.date | date_to_string }}</a>
         </span>
-=======
-{% for post in site.posts limit:5 %}
-    <div class="post">
-    
-        <h3 class="article_title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <div class="meta article_meta">
-            Posted {{ post.date | date_to_string }}
-        </div>  
->>>>>>> 6acc4864548f143f940545c3b6b178b6a2f6d496
         <div class="body">
             {{ post.content | postmorefilter }}
         </div>
     </div>
 {% endfor %}
 
-<div>
-<a href="./all.html">View All Posts</a>
-</div>
-
 
 <h2>Categories:</h2>
 <ul>
 {% for category in site.categories %}
-  <li><a href="./all.html#{{ category | first }}">{{ category | first }}</a></li>
+  <li><a href="#{{ category | first }}">{{ category | first }}</a></li>
 {% endfor %}
 </ul>
-<<<<<<< HEAD
 
 <h2>Articles by Category:</h2>
 <ul>
@@ -63,5 +48,3 @@ title: michaelchelen.net
 <!-- h2><a href="{{ post.url }}">{{ post.title }}</a></h2 -->
 <!-- {{ post.content }} -->
 {% endfor %}
-=======
->>>>>>> 6acc4864548f143f940545c3b6b178b6a2f6d496
