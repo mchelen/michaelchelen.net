@@ -15,7 +15,7 @@ title: michaelchelen.net
             Posted {{ post.date | date_to_string }}</a>
         </span>
         <div class="body">
-            {{ post.content | postmorefilter }}
+            {{ post.content | split:"<!-- more -->" | first }}
         </div>
     </div>
 {% endfor %}
