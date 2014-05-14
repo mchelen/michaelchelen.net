@@ -1,1 +1,0 @@
-../_posts/2011-11-13-blogging-with-git-using-jekyll-on-ubuntu-11-10.md

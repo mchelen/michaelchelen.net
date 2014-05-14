@@ -1,1 +1,0 @@
-../_posts/2013-02-15-install-jekyll-ubuntu-12-04.md
