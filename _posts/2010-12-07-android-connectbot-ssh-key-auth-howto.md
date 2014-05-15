@@ -4,7 +4,7 @@ uuid: 20e01f68-0f3e-4d92-a3a4-e04f2ea01229
 title: Android SSH Key Auth with ConnectBot
 name: android-connectbot-ssh-key-auth-howto.md
 created_at: 2010-12-07
-updated_at: 2011-11-17
+updated_at: 2014-05-15
 categories: android ssh
 ---
 ConnectBot is an open source SSH client for Android. SSH provides secure access to a remote server. Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. The key can be disabled at any time.
@@ -44,7 +44,9 @@ Click Menu then Generate. We are going to create a new key. This allows us to sp
 # Generate Pubkey Settings
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.settings.png)
 
-The new pubkey settings. Most of the defaults are fine. We will create a 1024 bit RSA key. 
+The new pubkey settings. Most of the defaults are fine. We will create a 1024 bit RSA key.
+
+**Update:** For improved security, a key size of 2048 or 4096 is now recommended. This does not affect any other steps.
 
 # Example Settings
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.settings.example.png)  
