@@ -164,8 +164,9 @@ blockquote {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  padding-left: 3px;
-  padding-right: 3px;
+  border: 1px solid #808080;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 code {
@@ -173,7 +174,7 @@ code {
   border-radius: .15em;
   -moz-border-radius: .15em;
   -webkit-border-radius: .15em;
-  padding: 0.1em 0.25em;
+  padding: 0.05em 0.25em;
   color: #F8F8F8;
   font: 1em/1.3em 'Lucida Console','courier new',monospace;
 }
