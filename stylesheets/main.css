@@ -5,12 +5,19 @@ a {
   color: inherit;
   text-decoration: none;
   border-bottom:1px dotted;
-  padding-left: 2px;
-  padding-right: 2px;
-  text-shadow: 1px 1px 1px #888;
-  -webkit-text-shadow: 1px 1px 1px #888;
-  -moz-text-shadow: 1px 1px 1px #888;
+/*  padding-left: 2px;
+  padding-right: 2px;*/
+  text-shadow: 1px 1px 1px #AFAFAF;
+  -webkit-text-shadow: 1px 1px 1px #AFAFAF;
+  -moz-text-shadow: 1px 1px 1px #AFAFAF;
 }
+
+h1,h2,h3 {
+  text-shadow: 1px 1px 2px #AFAFAF;
+  -webkit-text-shadow: 1px 1px 2px #AFAFAF;
+  -moz-text-shadow: 1px 1px 2px #AFAFAF;
+}
+
 a:hover {
   border-bottom: 1px solid;
 }
