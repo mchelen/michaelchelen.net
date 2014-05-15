@@ -17,6 +17,7 @@ title: michaelchelen.net
         <div class="body">
             {{ post.content | split:"<!--more-->" | first }}
         </div>
+        <a href="{{ post.url }}">Read more...</a>
     </div>
 {% endfor %}
 
