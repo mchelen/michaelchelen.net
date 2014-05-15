@@ -13,6 +13,7 @@ Jekyll 2 was [recently released][jekyll2] and can be installed on Ubuntu 14.04 u
 
 Jekyll is a static site generator with a templating system that can be adapted for many types of websites, including blogs. It can be run on a server, or run locally and the generated files uploaded to a server. It is the default software used by Github Pages.
 
+*Tested with Jekyll 2.0.3 and Ubuntu Server 14.04*
 
 [jekyll2]:http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/
 [ubunturepo]:http://packages.ubuntu.com/search?keywords=jekyll&searchon=names&suite=all&section=all

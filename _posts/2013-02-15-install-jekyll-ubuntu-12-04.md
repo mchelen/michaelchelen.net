@@ -6,7 +6,7 @@ name: install-jekyll-ubuntu-12-04
 created_at: 2013-02-15
 updated_at: 2013-02-15
 categories: jekyll ruby ubuntu
-published: true
+published: false
 ---
 
 Installing Jekyll is easier than ever on Ubuntu 12.04 using apt-get and everything works out of the box.

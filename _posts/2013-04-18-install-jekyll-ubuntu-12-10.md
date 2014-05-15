@@ -6,7 +6,7 @@ name: install-jekyll-ubuntu-12-10
 created_at: 2013-04-18
 updated_at: 2013-04-18
 categories: jekyll ubuntu ruby
-published: true
+published: false
 ---
 
 Installing Jekyll is easier than ever on Ubuntu 12.10 using apt-get and gem install. Additional options such as Pygments and Rdiscount can be added with the same methods.

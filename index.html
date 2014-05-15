@@ -12,7 +12,7 @@ title: michaelchelen.net
     <div class="post">
         <h3 class="article_title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <span class="meta">
-            Posted {{ post.date | date_to_string }}</a>
+            Posted {{ post.date | date: '%B %d, %Y' }}</a>
         </span>
         <div class="body">
             {{ post.content | split:"<!--more-->" | first }}
