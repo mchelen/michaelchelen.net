@@ -5,7 +5,7 @@ title: Android SSH Key Auth with ConnectBot
 name: android-connectbot-ssh-key-auth-howto.md
 created_at: 2010-12-07
 updated_at: 2011-11-17
-categories: android ssh connectbot
+categories: android ssh
 ---
 ConnectBot is an open source SSH client for Android. SSH provides secure access to a remote server. Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. The key can be disabled at any time.
 
