@@ -7,11 +7,14 @@ created_at: 2010-12-07
 updated_at: 2014-05-15
 categories: android ssh
 ---
-ConnectBot is an open source SSH client for Android. SSH provides secure access to a remote server. Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. The key can be disabled at any time.
-
-<!--more-->
-
 ![ConnectBot running on HTC Aria from AT&T.](/images/android-connectbot-ssh-key-auth-howto/connectbot.htc.aria.300px.png)
+
+[ConnectBot][] is an open source SSH client for Android. SSH provides secure access to a remote server. Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. The key can be disabled at any time.
+
+>Use [VX ConnectBot][vx] for a more updated Android SSH client. All steps from this guide still apply.
+[connectbot]:https://play.google.com/store/apps/details?id=org.connectbot
+[vx]:https://play.google.com/store/apps/details?id=sk.vx.connectbot
+<!--more-->
 
 This method can be performed entirely from your Android handset if you currently have password access to an SSH server. ConnectBot supports shell login and port forwarding, and file transfer is planned. Tested with ConnectBot 1.7.0, Android 2.2, and Ubuntu 10.10 Maverick Beta.
 
@@ -46,7 +49,7 @@ Click Menu then Generate. We are going to create a new key. This allows us to sp
 
 The new pubkey settings. Most of the defaults are fine. We will create a 1024 bit RSA key.
 
-**Update:** For improved security, a key size of 2048 or 4096 is now recommended. This does not affect any other steps.
+> For improved security, a key size of 2048 or 4096 is now recommended. This does not affect any other steps.
 
 # Example Settings
 ![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.settings.example.png)  
@@ -111,7 +114,7 @@ If the key is working, no username or password will be required to complete logi
 
 
 # Optional: Disable Key
-If the device is lost or access should to be disabled at any time, remove the key from the `authorized_keys` file. Use any text editor, or sed, to find the appropriate line. With a key named htc_aria for example:
+If the device is lost or access should to be disabled at any time, remove the key from the server's `authorized_keys` file. Use any text editor, or sed, to find the appropriate line. With a key named `htc_aria` for example:
 
     cd ~/.ssh
     sed '/htc_aria$/d' authorized_keys | tee authorized_keys
