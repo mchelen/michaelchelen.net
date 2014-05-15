@@ -14,16 +14,50 @@ a {
 a:hover {
   border-bottom: 1px solid;
 }
-#article, #header, #ad, #disqus_thread, div.footer {
+
+
+
+#ad, #disqus_thread, div.footer {
 /*  width: 950px; */
   background-color: #FFF;
-  padding: 10px;
-  padding-left: 15px;
-  margin: 15px;
+  padding: 5px;
+  padding-left: 10px;
+
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+
+#article, #header {
+/*  width: 950px; */
+  background-color: #FFF;
+  padding: 5px;
+  padding-left: 10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+#article {
+  margin-top:0px;
+}
+
+div.footer {
+padding-left:2em;
+}
+
+
+div.header {
+  color: rgb(120,120,120);
+  padding: 0px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+
 #adsense {
   margin-left: auto;
   margin-right: auto;
@@ -38,13 +72,10 @@ pre {
   font-size: 9pt;
 /*  width: 900px; */
 
-
-
   padding: 5px;
   padding-right: 10px;
   padding-left: 10px;
   
-
   margin: 5px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -112,7 +143,7 @@ div.rightblock {
   background: white;
   width: 25%;
   padding: 1em;
-  margin-top: 1.1em;
+  margin-top: 10px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;

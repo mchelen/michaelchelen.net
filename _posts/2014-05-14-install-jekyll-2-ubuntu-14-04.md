@@ -1,17 +1,17 @@
 ---
 layout: article
 uuid: 7c60f526-81fa-4b5c-8cb1-29e9418a93d8
-title: Install Jekyll 1.5 on Ubuntu 14.04
-name: install-jekyll-ubuntu-14-04
+title: Install Jekyll 2 on Ubuntu 14.04
+name: install-jekyll-2-ubuntu-14-04
 created_at: 2014-05-13
-updated_at: 2014-05-13
-categories: ubuntu jekyll
+updated_at:
+categories: ubuntu jekyll ruby
 published: true
 ---
-
 Jekyll is a static site generator used by Github Pages. It can be run locally or on a server.
 
-Installing Jekyll is easier than ever on Ubuntu 14.04 using apt-get and gem install. Additional options such as Pygments and Rdiscount can be added with the same methods. Although there is a package for Jekyll, this method allows installation of the morecent Jekyll version 1.5.1
+Jekyll can be installed system wide on Ubuntu 14.04 using apt-get and gem install. Additional options such as Pygments and Rdiscount can be added with the same methods. Although there is a package for Jekyll in the Ubuntu repository, these instructions allow installation of the more recent Jekyll version 2.0.3
+
 <!--more--> 
 
 Install Jekyll
@@ -19,45 +19,54 @@ Install Jekyll
 
 Install ruby, the ruby development libraries, and the make command.
 
-  sudo apt-get install ruby ruby-dev make
+    sudo apt-get install ruby ruby-dev make
 
-  sudo gem install jekyll --no-rdoc --no-ri
+    sudo gem install jekyll --no-rdoc --no-ri
 
-jekyll version: 
-  jekyll 1.5.1
 
 
 
 
 https://github.com/jekyll/jekyll/issues/2327
+
 https://github.com/jekyll/jekyll/pull/2362
+
 http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/
 
-sudo gem install therubyrhino --no-rdoc --no-ri
+    sudo gem install therubyrhino --no-rdoc --no-ri
 
 Start Jekyll
+
+jekyll version: 
+    jekyll 2.0.3
+
+    jekyll -v
+
+
 Generates website into `_site` directory
 
-  jekyll
+    jekyll
+
+
 
 Generates website and starts local server
-  jekyll serve
+    jekyll serve
 
 Then visit [http://localhost:4000]()
 
 
 Optional Jekyll parameters
 Watch Jekyll directory for changes and regenerate website
-  jekyll serve -w
+    jekyll serve -w
 
 
 
 Optionally install additional gems
 
-sudo gem install kramdown --no-rdoc --no-ri
+    sudo gem install kramdown --no-rdoc --no-ri
 
 
-sudo gem install rdiscount --no-rdoc --no-ri
+    sudo gem install rdiscount --no-rdoc --no-ri
 
 
 Install Ruby 1.9.1 which includes the `gem` command, and the `make` command: 

@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+<div class="header">Posted {{ page.date | date: '%B %d, %Y' }} 
+{% if page.updated_at != null %}
+  <em> - Updated {{ page.updated_at | date: '%B %d, %Y'}} </em>
+{% endif %}
+</div>
+
 <div id="article">
   {{ content }}
 </div>
@@ -23,7 +29,6 @@ layout: default
 
 
   <br />
-  <div class="footer"><em>Updated at {{ page.updated_at }} </em></div>
 </div>
 
 
