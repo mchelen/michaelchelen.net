@@ -74,6 +74,15 @@ Optionally install additional gems
     sudo gem install rdiscount --no-rdoc --no-ri
 
 
+
+
+
+
+
+
+
+
+
 Install Ruby 1.9.1 which includes the `gem` command, and the `make` command: 
     sudo apt-get install ruby1.9.1 ruby1.9.1-dev make
 

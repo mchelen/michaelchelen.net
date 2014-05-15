@@ -5,7 +5,7 @@ title: Install Jekyll on Ubuntu 12.10
 name: install-jekyll-ubuntu-12-10
 created_at: 2013-04-18
 updated_at: 2013-04-18
-categories: unfinished
+categories: jekyll ubuntu ruby
 published: true
 ---
 
