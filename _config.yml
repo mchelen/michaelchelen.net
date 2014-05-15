@@ -1,9 +1,8 @@
 #destination: ./michaelchelen.net
-pygments: true
+highlighter: pygments
 markdown: rdiscount
-exclude: mkdocument
+exclude: [mkdocument]
 lsi: true
-auto: true
 permalink: /articles/:title.html
 # leave blank for /
 url_root: 
