@@ -26,6 +26,8 @@ Install ruby, the ruby development libraries, and the make command.
 
 
 
+    sudo apt-get install git
+
 
 https://github.com/jekyll/jekyll/issues/2327
 
@@ -34,6 +36,12 @@ https://github.com/jekyll/jekyll/pull/2362
 http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/
 
     sudo gem install therubyrhino --no-rdoc --no-ri
+    sudo gem install therubyracer --no-rdoc --no-ri
+
+http://ubuntuforums.org/showthread.php?t=1464768&p=9188769#post9188769
+
+sudo apt-get install g++
+
 
 Start Jekyll
 
@@ -62,9 +70,6 @@ Watch Jekyll directory for changes and regenerate website
 
 
 Optionally install additional gems
-
-    sudo gem install kramdown --no-rdoc --no-ri
-
 
     sudo gem install rdiscount --no-rdoc --no-ri
 
