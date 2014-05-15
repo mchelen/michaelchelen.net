@@ -8,68 +8,72 @@ updated_at:
 categories: ubuntu jekyll ruby
 published: true
 ---
-Jekyll is a static site generator used by Github Pages. It can be run locally or on a server.
+![](http://jekyllrb.com/img/logo-2x.png)
+Jekyll 2 was [recently released][jekyll2] and can be installed on Ubuntu 14.04 using `apt-get` and `gem install`. Additional features such as Rdiscount can be added with the same method. Although there are packages for Jekyll in the [Ubuntu repository][ubunturepo], the packages are for older versions of Jekyll.
 
-Jekyll can be installed system wide on Ubuntu 14.04 using apt-get and gem install. Additional options such as Pygments and Rdiscount can be added with the same methods. Although there is a package for Jekyll in the Ubuntu repository, these instructions allow installation of the more recent Jekyll version 2.0.3
+Jekyll is a static site generator with a templating system that can be adapted for many types of websites, including blogs. It can be run on a server, or run locally and the generated files uploaded to a server. It is the default software used by Github Pages.
+
+
+[jekyll2]:http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/
+[ubunturepo]:http://packages.ubuntu.com/search?keywords=jekyll&searchon=names&suite=all&section=all
 
 <!--more--> 
 
-Install Jekyll
-----
+## Install Prerequisites ##
 
 Install ruby, the ruby development libraries, and the make command.
 
     sudo apt-get install ruby ruby-dev make
 
+
+## Install Jekyll ##
+Install the Jekyll gem system wide. For speed, we are excluding the extended documentation. To include all documentation, omit the `--no-rdoc --no-ri` switches.
+
     sudo gem install jekyll --no-rdoc --no-ri
 
 
+## CoffeeScript Workaround ##
+There is a [current issue][issue] that causes Jekyll to require the CoffeeScript gem, even if it will not be used. CoffeeScript in turn requires a JavaScript runtime.
 
+[issue]:https://github.com/jekyll/jekyll/issues/2327
 
-    sudo apt-get install git
+To work around this issue install a JavaScript runtime such as `therubyracer`. This requires the `g++` compiler to be installed. 
 
-
-https://github.com/jekyll/jekyll/issues/2327
-
-https://github.com/jekyll/jekyll/pull/2362
-
-http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/
-
-    sudo gem install therubyrhino --no-rdoc --no-ri
+    sudo apt-get install g++
     sudo gem install therubyracer --no-rdoc --no-ri
 
-http://ubuntuforums.org/showthread.php?t=1464768&p=9188769#post9188769
 
-sudo apt-get install g++
+## Start Jekyll ##
 
-
-Start Jekyll
-
-jekyll version: 
-    jekyll 2.0.3
-
+Check that Jekyll has been successfully installed.
     jekyll -v
 
+The current version as of now is `jekyll 2.0.3`
 
-Generates website into `_site` directory
-
-    jekyll
-
-
-
-Generates website and starts local server
+Generate website and start local server.
     jekyll serve
 
-Then visit [http://localhost:4000]()
+Then visit <http://localhost:4000> in a web browser.
 
+**Jekyll is now successfully runnning.**
 
-Optional Jekyll parameters
-Watch Jekyll directory for changes and regenerate website
+Watch Jekyll directory for changes and regenerate website.
     jekyll serve -w
+    
+The default port `4000` can be changed, for example when running multiple Jekyll instances.
+
+    jekyll serve --port 4001
+Then visit <http://localhost:4001> in a web browser.
+
+Generate website and place files into `_site` directory without starting a local server.
+    jekyll build
 
 
+## Optional ##
+Although not required, `git` is often used to manage the files of a Jekyll website.
+    sudo apt-get install git
 
-Optionally install additional gems
+Additional gems can add features to Jekyll, such as the alternate `rdiscount` Markdown renderer.
 
     sudo gem install rdiscount --no-rdoc --no-ri
 
@@ -83,39 +87,9 @@ Optionally install additional gems
 
 
 
-Install Ruby 1.9.1 which includes the `gem` command, and the `make` command: 
-    sudo apt-get install ruby1.9.1 ruby1.9.1-dev make
-
-Install Jekyll:
-    sudo gem install jekyll
-
-Start Jekyll
-----
-Jekyll can be run inside the website directory:
-    jekyll
-
-Then visit [http://localhost:4000]() in your web browser to see your Jekyll site.
-
-
-
-Additional Options
-----
-
-Install Pygments code syntax highlighter:
-    sudo apt-get install python-pygments
-
-Install Rdiscount and Kramdown renderers for Markdown:
-    sudo gem install rdiscount kramdown
-
-If the Jekyll webserver is not started by default, you can specify the `--server` option:
-    jekyll --server
-
-The default port `4000` can be changed, for example when running multiple Jekyll instances:
-    jekyll --server 4001
-
-Then visit [http://localhost:4001]()
-
-
 References
 ----
 http://stackoverflow.com/a/8113213/2043808
+https://github.com/jekyll/jekyll/pull/2362
+http://ubuntuforums.org/showthread.php?t=1464768&p=9188769#post9188769
+
