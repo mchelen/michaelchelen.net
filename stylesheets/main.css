@@ -257,21 +257,20 @@ div.button {
   background-image: linear-gradient(#FFFFFF, #DEDEDE);
   border: 1px solid #CCCCCC;
   border-radius: 5px;
-
 }
 
 a.button {
   background-image:url("https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_32.png");
   background-repeat: no-repeat;
-  background-position: 10px;
+  background-position: 5%;
   height:32px;
   width:70%;
   display:block;
   padding-left:20%;
   padding-right:10%;
   padding-top:0.8em;
-  font-size:100%;
 
+  text-align:center;
   
   color: white;
   text-shadow: 1px 1px 1px #888;
