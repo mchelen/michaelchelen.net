@@ -195,59 +195,6 @@ code {
 
 
 
-/*
-css github fork me from
-http://cssdeck.com/item/322/github-fork-me-on
-*/
-.forkme {
-	display: block;
-	position: absolute;
-	top: 25px;
-	right: -80px;
-	background: #FAFAFA;
-
-	background: -webkit-linear-gradient(#FAFAFA,#bed977);
-	background: -moz-linear-gradient(#FAFAFA,#bed977);
-	background: -o-linear-gradient(#FAFAFA,#bed977);
-	background: -ms-linear-gradient(#FAFAFA,#bed977);
-	background: linear-gradient(#FAFAFA,#bed977);
-	color: black;
-	height: 34px;
-	width: 250px;
-	text-decoration: none;
-	text-align: center;
-	font-family: "Collegia";
-	font-size: 25px;
-	line-height: 32px;
-
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-	border-bottom: 1px solid #CACACA;
-	
-	
-    font-family: 'Collegia';
-    font-style: normal;
-    font-weight: normal;
-    src: local("Bangers"), url("http://www.roparz.me/font/COLLEGIA.otf") format("woff");
-}
-
-.forkme span {
-	display: block;
-	text-transform: uppercase;
-	position: absolute;
-	left: 100px;
-	top: 20px;
-	font-size: 15px;
-}
-
-.forkme:hover {
-	text-decoration: underline;
-	border: 0;
-}
-
 h3.article_title {
     margin-bottom: .2em;    
 }
