@@ -54,11 +54,12 @@ The current version as of now is `jekyll 2.0.3`
 Generate website and start local server.
     jekyll serve
 
-Then visit <http://localhost:4000> in a web browser.
+Then visit <http://localhost:4000> in a web browser. If it works, that means Jekyll is now successfully runnning.
 
-**Jekyll is now successfully runnning.**
 
-Watch Jekyll directory for changes and regenerate website.
+## Jekyll Commands ##
+The Jekyll server can be set to watch the directory for file updates and then regenerate the website.
+
     jekyll serve -w
     
 The default port `4000` can be changed, for example when running multiple Jekyll instances.
@@ -66,31 +67,17 @@ The default port `4000` can be changed, for example when running multiple Jekyll
     jekyll serve --port 4001
 Then visit <http://localhost:4001> in a web browser.
 
-Generate website and place files into `_site` directory without starting a local server.
+Instead of running as a server, Jekyll can simply generate website files and place them into the `_site` directory.
+
     jekyll build
 
 
 ## Optional ##
-Although not required, `git` is often used to manage the files of a Jekyll website.
-    sudo apt-get install git
-
 Additional gems can add features to Jekyll, such as the alternate `rdiscount` Markdown renderer.
 
     sudo gem install rdiscount --no-rdoc --no-ri
 
+Although not required, `git` is often used to manage the files of a Jekyll website.
 
-
-
-
-
-
-
-
-
-
-References
-----
-http://stackoverflow.com/a/8113213/2043808
-https://github.com/jekyll/jekyll/pull/2362
-http://ubuntuforums.org/showthread.php?t=1464768&p=9188769#post9188769
+    sudo apt-get install git
 
