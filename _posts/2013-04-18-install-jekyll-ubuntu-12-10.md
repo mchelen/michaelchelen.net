@@ -1,6 +1,6 @@
 ---
 layout: article
-uuid: f76e69c2-790c-492d-bc01-86cd1e6a0714
+uuid: f349fbd9-5fd8-49a6-a2d6-cccc0c8f6a1b
 title: Install Jekyll on Ubuntu 12.10
 name: install-jekyll-ubuntu-12-10
 created_at: 2013-04-18

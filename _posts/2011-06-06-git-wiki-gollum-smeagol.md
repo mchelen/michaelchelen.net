@@ -1,6 +1,6 @@
 --- 
 layout: article
-uuid: 20e01f68-0f3e-4d92-a3a4-e04f2ea01229
+uuid: 5c8d4911-0ffa-4f0e-b707-a26dfd00d379
 title: Git Wiki with Gollum and Smeagol
 name: git-wiki-gollum-smeagol
 created_at: 2011-06-01
