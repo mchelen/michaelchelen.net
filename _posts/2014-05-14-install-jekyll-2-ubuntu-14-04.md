@@ -52,10 +52,11 @@ Check that Jekyll has been successfully installed.
 
 The current version as of now is `jekyll 2.0.3`
 
-Generate website and start local server.
+Generate the website and start a local server.
+
     jekyll serve
 
-Then visit <http://localhost:4000> in a web browser. If it works, that means Jekyll is now successfully runnning.
+Then visit <http://localhost:4000> in a web browser. If it works, that means Jekyll is now successfully runnning!
 
 
 ## Jekyll Commands ##
