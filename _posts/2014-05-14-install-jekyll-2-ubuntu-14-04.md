@@ -33,12 +33,12 @@ Install the Jekyll gem system wide. For speed, we are excluding the extended doc
     sudo gem install jekyll --no-rdoc --no-ri
 
 
-## CoffeeScript Workaround ##
+## ExecJS Workaround ##
 There is a [current issue][issue] that causes Jekyll to require the CoffeeScript gem, even if it will not be used. CoffeeScript in turn requires a JavaScript runtime.
 
 [issue]:https://github.com/jekyll/jekyll/issues/2327
 
-To work around this issue install a JavaScript runtime such as `therubyracer`. This requires the `g++` compiler to be installed. 
+If you try running `jekyll -v` and get no error then skip this step. If you get an error "Could not find a JavaScript runtime." you will need to install a JavaScript runtime such as `therubyracer`. This requires the `g++` compiler to be installed. 
 
     sudo apt-get install g++
     sudo gem install therubyracer --no-rdoc --no-ri
