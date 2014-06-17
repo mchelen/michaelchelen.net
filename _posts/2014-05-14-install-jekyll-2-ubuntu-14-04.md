@@ -34,7 +34,7 @@ Install the Jekyll gem system wide. For speed, we are excluding the extended doc
 
 
 ## ExecJS Workaround ##
-There is a [current issue][issue] that causes Jekyll to require the CoffeeScript gem, even if it will not be used. CoffeeScript in turn requires a JavaScript runtime.
+There is a [current issue][issue] that causes Jekyll to require the CoffeeScript gem even if it will not be used. CoffeeScript in turn requires a JavaScript runtime.
 
 [issue]:https://github.com/jekyll/jekyll/issues/2327
 
@@ -47,6 +47,7 @@ If you try running `jekyll -v` and get no error then skip this step. If you get 
 ## Start Jekyll ##
 
 Check that Jekyll has been successfully installed.
+
     jekyll -v
 
 The current version as of now is `jekyll 2.0.3`
