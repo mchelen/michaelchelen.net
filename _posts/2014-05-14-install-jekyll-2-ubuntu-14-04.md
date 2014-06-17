@@ -38,7 +38,7 @@ There is a [current issue][issue] that causes Jekyll to require the CoffeeScript
 
 [issue]:https://github.com/jekyll/jekyll/issues/2327
 
-If you try running `jekyll -v` and get no error then skip this step. If you get an error "Could not find a JavaScript runtime." you will need to install a JavaScript runtime such as `therubyracer`. This requires the `g++` compiler to be installed. 
+If you run `jekyll -v` and get no error then skip this step. If you get an error "Could not find a JavaScript runtime" you need to install a JavaScript runtime such as `therubyracer`. This requires the `g++` compiler. 
 
     sudo apt-get install g++
     sudo gem install therubyracer --no-rdoc --no-ri
