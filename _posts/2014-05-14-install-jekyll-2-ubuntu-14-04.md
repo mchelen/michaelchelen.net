@@ -4,16 +4,16 @@ uuid: 7c60f526-81fa-4b5c-8cb1-29e9418a93d8
 title: Install Jekyll 2 on Ubuntu 14.04
 name: install-jekyll-2-ubuntu-14-04
 created_at: 2014-05-13
-updated_at:
+updated_at: 2014-07-17
 categories: ubuntu jekyll ruby
 published: true
 ---
 ![](http://jekyllrb.com/img/logo-2x.png)
-Jekyll 2 was [recently released][jekyll2] and can be installed on Ubuntu 14.04 using `apt-get` and `gem install`. Additional features such as Rdiscount can be added with the same method. Although there are packages for Jekyll in the [Ubuntu repository][ubunturepo], the packages are older versions of Jekyll.
+Jekyll 2 was [recently released][jekyll2] and can be installed on Ubuntu 14.04 using `apt-get` and `gem install`. Additional features such as Rdiscount can be added with the same method. Although there are packages for Jekyll in the [Ubuntu repository][ubunturepo], the packages are for older versions of Jekyll.
 
 Jekyll is a static site generator with a templating system that can be adapted for many types of websites, including blogs. It can be run on a server, or run locally and the generated files uploaded to a server. It is the default software used by Github Pages.
 
-*Tested with Jekyll 2.0.3 and Ubuntu Server 14.04*
+*Tested with Jekyll 2.1.1 and Ubuntu Server 14.04*
 
 [jekyll2]:http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/
 [ubunturepo]:http://packages.ubuntu.com/search?keywords=jekyll&searchon=names&suite=all&section=all
@@ -34,15 +34,13 @@ Install the Jekyll gem system wide. For speed, we are excluding the extended doc
 
 
 ## ExecJS Workaround ##
-There is a [current issue][issue] that causes Jekyll to require the CoffeeScript gem even if it will not be used. CoffeeScript in turn requires a JavaScript runtime.
+There is a [current issue][issue] that causes Jekyll to require the CoffeeScript gem even if it will not be used, and CoffeeScript requires a JavaScript runtime.
 
 [issue]:https://github.com/jekyll/jekyll/issues/2327
 
-If you run `jekyll -v` and get no error then skip this step. If you get an error "Could not find a JavaScript runtime" you need to install a JavaScript runtime such as `therubyracer`. This requires the `g++` compiler. 
+To work around this issue install a JavaScript runtime such as `nodejs`.
 
-    sudo apt-get install g++
-    sudo gem install therubyracer --no-rdoc --no-ri
-
+    sudo apt-get install nodejs
 
 ## Start Jekyll ##
 
@@ -50,17 +48,45 @@ Check that Jekyll has been successfully installed.
 
     jekyll -v
 
-The current version as of now is `jekyll 2.0.3`
+The current version is `jekyll 2.1.1`
 
-Generate the website and start a local server.
+## Recommended ##
+Although not required, `git` is often used to manage the files of a Jekyll website.
+
+    sudo apt-get install git
+
+Additional gems can add features to Jekyll, such as the alternate `rdiscount` Markdown renderer.
+
+    sudo gem install rdiscount --no-rdoc --no-ri
+
+### Get Website Content ###
+Now that Jekyll is installed, we need content for it to serve. We can either use a current website, or set up a new site from scratch.
+
+#### Use Existing Site ####
+Use `git` to clone an existing Jekyll website, such as this one!
+
+    git clone https://github.com/mchelen/michaelchelen.net.git
+    cd michaelchelen.net
+
+#### Create New Site ####
+The `new` command creates a directory structure and config files for a new Jekyll site.
+
+    jekyll new my-awesome-site
+    cd my-awesome-site 
+
+
+### Start Jekyll ###
+Now that the basic config and layout are available, start Jekyll to generate the website HTML and start a local server.
 
     jekyll serve
 
-Then visit <http://localhost:4000> in a web browser. If it works, that means Jekyll is now successfully runnning!
+Then visit <http://localhost:4000> in a web browser.
+
+> Jekyll is now successfully runnning!
 
 
-## Jekyll Commands ##
-The Jekyll server can be set to watch the directory for file updates and then regenerate the website.
+### Extra Options ###
+Jekyll can watch the directory for changes and regenerate the website when files are modified.
 
     jekyll serve -w
     
@@ -69,17 +95,15 @@ The default port `4000` can be changed, for example when running multiple Jekyll
     jekyll serve --port 4001
 Then visit <http://localhost:4001> in a web browser.
 
-Instead of running as a server, Jekyll can simply generate website files and place them into the `_site` directory.
+The website can be generated without starting a local server. The files are placed into the `_site` directory and can be uploaded to a web server.
 
     jekyll build
 
 
-## Optional ##
-Additional gems can add features to Jekyll, such as the alternate `rdiscount` Markdown renderer.
 
-    sudo gem install rdiscount --no-rdoc --no-ri
-
-Although not required, `git` is often used to manage the files of a Jekyll website.
-
-    sudo apt-get install git
-
+References
+----
+* <http://stackoverflow.com/a/8113213/2043808>
+* <https://github.com/jekyll/jekyll/pull/2362>
+* <http://ubuntuforums.org/showthread.php?t=1464768&p=9188769#post9188769>
+* <http://jekyllrb.com/docs/home/>
