@@ -48,7 +48,7 @@ Check that Jekyll has been successfully installed.
 
     jekyll -v
 
-The current version is `jekyll 2.1.1`
+The current version is `jekyll 2.1.1`.
 
 ## Recommended ##
 Although not required, `git` is often used to manage the files of a Jekyll website.
