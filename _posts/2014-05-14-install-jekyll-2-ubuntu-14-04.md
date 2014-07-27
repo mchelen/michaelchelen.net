@@ -1,6 +1,7 @@
 ---
 layout: article
 uuid: 7c60f526-81fa-4b5c-8cb1-29e9418a93d8
+shortid: 81fa
 title: Install Jekyll 2 on Ubuntu 14.04
 name: install-jekyll-2-ubuntu-14-04
 created_at: 2014-05-13

@@ -3,7 +3,7 @@ highlighter: pygments
 markdown: rdiscount
 exclude: [mkdocument]
 lsi: true
-permalink: /:title/
+permalink: /:shortid/:title/
 # leave blank for /
 url_root: 
 # Options used in Jekyll-base

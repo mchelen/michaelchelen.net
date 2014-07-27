@@ -1,12 +1,14 @@
 ---
 layout: article
 uuid: fd6bd400-93ac-46f7-8585-34351741ef8d
+shortid: 93ac
 title: Get Started Developing PHP With VirtualBox
 name: get-started-developing-php-with-virtualbox
 created_at: 2011-09-08
 updated_at: 2011-09-08
 categories: unfinished
 published: false
+redirect_from: /93ac/
 ---
 
 

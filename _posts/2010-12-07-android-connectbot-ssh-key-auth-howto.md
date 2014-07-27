@@ -1,6 +1,7 @@
 --- 
 layout: article
 uuid: 20e01f68-0f3e-4d92-a3a4-e04f2ea01229
+shortid: 0f3e
 title: Android SSH Key Auth with ConnectBot
 name: android-connectbot-ssh-key-auth-howto.md
 created_at: 2010-12-07
@@ -8,7 +9,7 @@ updated_at: 2014-05-15
 categories: android ssh
 redirect_from:
   - /articles/android-connectbot-ssh-key-auth-howto.html
-  - /20e01f68/
+  - /0f3e/
 ---
 ![ConnectBot running on HTC Aria from AT&T.](/images/android-connectbot-ssh-key-auth-howto/connectbot.htc.aria.300px.png)
 

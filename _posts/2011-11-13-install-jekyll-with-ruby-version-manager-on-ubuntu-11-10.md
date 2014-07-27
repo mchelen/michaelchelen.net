@@ -1,11 +1,13 @@
 ---
 layout: article
 uuid: 651f1da1-9c42-49bb-9001-be7b8f99b56d
+shortid: 9c42
 title: Install Jekyll with Ruby Version Manager on Ubuntu 11.10
 name: install-jekyll-with-ruby-version-manager-on-ubuntu-11.10
 created_at: 2011-11-13
 updated_at: 2012-05-01
 categories: git jekyll ruby ubuntu
+redirect_from: /9c42/
 ---
 
 Jekyll generates a complete website such as a blog from plain text files. The generated files can be served by any standard webserver. Markup languages such as Markdown are supported through Gems. Jekyll is made to be compatible with version control systems such as Git. These steps will install Ruby and Jekyll for the current user. Tested on Ubuntu Server 11.10 Oneiric
