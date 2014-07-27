@@ -7,6 +7,7 @@ created_at: 2014-05-13
 updated_at: 2014-07-17
 categories: ubuntu jekyll ruby
 published: true
+redirect_from: articles/install-jekyll-2-ubuntu-14-04.html
 ---
 ![](http://jekyllrb.com/img/logo-2x.png)
 Jekyll 2 was [recently released][jekyll2] and can be installed on Ubuntu 14.04 using `apt-get` and `gem install`. Additional features such as Rdiscount can be added with the same method. Although there are packages for Jekyll in the [Ubuntu repository][ubunturepo], the packages are for older versions of Jekyll.
