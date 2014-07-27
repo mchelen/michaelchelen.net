@@ -2,8 +2,8 @@
 layout: article
 uuid: 651f1da1-9c42-49bb-9001-be7b8f99b56d
 shortid: 9c42
+permalink: /9c42/install-jekyll-with-ruby-version-manager-on-ubuntu-11.10
 title: Install Jekyll with Ruby Version Manager on Ubuntu 11.10
-name: install-jekyll-with-ruby-version-manager-on-ubuntu-11.10
 created_at: 2011-11-13
 updated_at: 2012-05-01
 categories: git jekyll ruby ubuntu

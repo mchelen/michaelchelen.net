@@ -3,7 +3,7 @@ layout: article
 uuid: c6c404f0-00cc-4245-b535-450c1eb6fc51
 shortid: 00cc
 title: Blogging with Git using Jekyll on Ubuntu 11.04
-name: blogging-with-git-using-jekyll-on-ubuntu-11-04
+permalink: /00cc/blogging-with-git-using-jekyll-on-ubuntu-11-04
 created_at: 2011-06-07
 updated_at: 2011-06-07
 categories: git jekyll ruby ubuntu
