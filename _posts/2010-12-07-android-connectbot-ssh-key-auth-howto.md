@@ -11,7 +11,7 @@ redirect_from:
   - /articles/android-connectbot-ssh-key-auth-howto.html
   - /0f3e/
 ---
-![ConnectBot running on HTC Aria from AT&T.](/images/android-connectbot-ssh-key-auth-howto/connectbot.htc.aria.300px.png)
+![ConnectBot running on HTC Aria from AT&T.](/images/0f3e/connectbot.htc.aria.300px.png)
 
 [ConnectBot][] is an open source SSH client for Android. SSH provides secure access to a remote server. Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. The key can be disabled at any time.
 
@@ -29,62 +29,62 @@ SSH server must be installed on the remote system. Key authentication is usually
     sudo apt-get install openssh-server
 
 # Start ConnectBot
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.home.png)
+![](/images/0f3e/connectbot.home.png)
 
 ConnectBot home screen. There are no known hosts yet.
 
 # Select Manage Pubkeys
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.home.menu.png)
+![](/images/0f3e/connectbot.home.menu.png)
 
 Click Menu, then Manage Pubkeys to configure keys.
 
 # Manage Pubkeys Screen
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkeys.png)
+![](/images/0f3e/connectbot.pubkeys.png)
 
 There are no keys set up yet.
 
 # Generate Pubkey
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.png)
+![](/images/0f3e/connectbot.pubkey.generate.png)
 
 Click Menu then Generate. We are going to create a new key. This allows us to specifically revoke access if the handset is lost.
 
 # Generate Pubkey Settings
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.settings.png)
+![](/images/0f3e/connectbot.pubkey.generate.settings.png)
 
 The new pubkey settings. Most of the defaults are fine. We will create a 1024 bit RSA key.
 
 > For improved security, a key size of 2048 or 4096 is now recommended. This does not affect any other steps.
 
 # Example Settings
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.settings.example.png)  
+![](/images/0f3e/connectbot.pubkey.generate.settings.example.png)  
 You can call your key anything you like. I have named mine after the device, htc_aria. Enable "Load key at start" to have the key automatically loaded by ConnectBot.
 
 # Collect Entropy
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.generate.entropy.png)  
+![](/images/0f3e/connectbot.pubkey.generate.entropy.png)  
 Random numbers are used to generate the key. Move your finger around the screen until enough randomness has been collected.
 
 # New Pubkey Created
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.example.png)  
+![](/images/0f3e/connectbot.pubkey.example.png)  
 The new key has been created. It is unlocked and will be used by ConnectBot automatically when connecting to a server.
 
 # Copy Pubkey
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.details.png)  
+![](/images/0f3e/connectbot.pubkey.details.png)  
 Long press on the new key to bring up a menu. Click "Copy public key" This public part of the key will be copied onto the remote server. 
 
 # Connect to Server
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.connect.to.server.png)  
+![](/images/0f3e/connectbot.connect.to.server.png)  
 Go back to the ConnectBot home screen and enter your server information to connect to your SSH server.
 
 # First Connection
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.first.connect.png)  
+![](/images/0f3e/connectbot.first.connect.png)  
 Choose "Yes" to accept the server's key if this is the first time connecting to the server.
 
 # Connection Established
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.connected.png)  
+![](/images/0f3e/connectbot.connected.png)  
 Login with a username and password to complete the connection. This is now the terminal of the remote server.
 
 # Add Key
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.authorized.keys.append.png)
+![](/images/0f3e/connectbot.authorized.keys.append.png)
 
 The list of keys accepted for this user is stored in the `authorized_keys` file. This file is located in the `.ssh` directory within the user's home directory. Use the `echo` command and paste in the key, surrounded by parentheses. The `>>` will append your public key onto the `.ssh/authorized_keys` file.
 
@@ -95,19 +95,19 @@ For example:
     echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDQFSzet/Qu8SLklDQyNbX5k16MwOBVKuaY9bNJhb99BkIRIVbNpr61eHUG3gP6haNC6qreTbpHscq4AQV21gLvCgVmHsTci0QAK44weFyDzVwIBFH9uUN+f/k2NTY9zV8FaBqK9CW8hS2f50EB38mGYvE7/0/S1u7/jtxnKqwAgw== htc_aria" >> .ssh/authorized_keys
 
 # Set Permissions for authorized_keys
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.authorized.keys.chmod.png)
+![](/images/0f3e/connectbot.authorized.keys.chmod.png)
 
 The `.ssh/authorized_keys` file must be writeable only by the owner. Set the permissions to `644` which means `rw-r--r--` if it is not already that way.
 
     chmod 644 .ssh/authorized_keys
 
 # Disconnect
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.disconnect.png)
+![](/images/0f3e/connectbot.disconnect.png)
 
 Disconnect from the server. It will be now be listed on the screen.
 
 # Test Connection
-![](/images/android-connectbot-ssh-key-auth-howto/connectbot.pubkey.test.png)
+![](/images/0f3e/connectbot.pubkey.test.png)
 
 Connect to the server again. While logging in it will say that public key authentication is being attempted:
 
