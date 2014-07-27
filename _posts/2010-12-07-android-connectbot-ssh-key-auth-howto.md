@@ -6,7 +6,9 @@ name: android-connectbot-ssh-key-auth-howto.md
 created_at: 2010-12-07
 updated_at: 2014-05-15
 categories: android ssh
-redirect_from: articles/android-connectbot-ssh-key-auth-howto.html
+redirect_from:
+  - /articles/android-connectbot-ssh-key-auth-howto.html
+  - /20e01f68/
 ---
 ![ConnectBot running on HTC Aria from AT&T.](/images/android-connectbot-ssh-key-auth-howto/connectbot.htc.aria.300px.png)
 
