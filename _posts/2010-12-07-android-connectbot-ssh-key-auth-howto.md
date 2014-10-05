@@ -4,6 +4,7 @@ uuid: 20e01f68-0f3e-4d92-a3a4-e04f2ea01229
 shortid: 0f3e
 title: Android SSH Key Auth with ConnectBot
 permalink: /0f3e/android-connectbot-ssh-key-auth-howto
+description: Use an SSH key for secure passwordless connection from an Android phone to a Linux server or desktop.
 created_at: 2010-12-07
 updated_at: 2014-05-15
 categories: android ssh
