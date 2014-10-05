@@ -8,6 +8,7 @@ description: Jekyll 2 was recently released and can be installed on Ubuntu 14.04
 created_at: 2014-05-13
 updated_at: 2014-07-17
 categories: ubuntu jekyll ruby
+tags: [Ubuntu, Jekyll, Ruby, Linux]
 published: true
 redirect_from:
   - /articles/install-jekyll-2-ubuntu-14-04.html

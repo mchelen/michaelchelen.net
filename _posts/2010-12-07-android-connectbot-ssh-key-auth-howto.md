@@ -8,6 +8,7 @@ description: Use an SSH key for secure passwordless connection from an Android p
 created_at: 2010-12-07
 updated_at: 2014-05-15
 categories: android ssh
+tags: [Android, SSH, Linux]
 redirect_from:
   - /articles/android-connectbot-ssh-key-auth-howto.html
   - /0f3e/
