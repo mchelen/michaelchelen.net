@@ -1,20 +1,20 @@
-title:            HPSTR Theme
-description:      A responsive Jekyll theme with modern tendencies from designer Michael Rose.
-disqus_shortname: hpstrtheme
-reading_time:     true
+title:            michaelchelen.net
+description:      Guides and information written by Michael Chelen
+disqus_shortname: michaelchelennet
+reading_time:     false
 words_per_minute: 200
-url:              http://mmistakes.github.io/hpstr-jekyll-theme
+url:              //michaelchelen.net
 
 # Owner/author information
 owner:
-  name:           Michael Rose
+  name:           Michael Chelen
   avatar:         avatar.jpg
-  bio:            "Just another boring, tattooed, time traveling designer hailing from Buffalo New York."
-  email:          michael@mademistakes.com
+  bio:            "A person"
+  email:          michael.chelen@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        mmistakes
+  twitter:        mikechelen
   facebook:       
-  github:         mmistakes
+  github:         mchelen
   stackexchange:  
   linkedin:       
   instagram:        
@@ -22,13 +22,13 @@ owner:
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +MichaelRoseDesign
+  google_plus:    +MichaelChelen
 
 # Background image to be tiled on all pages
 background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-2011187-5
+google_analytics: 
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -38,9 +38,9 @@ bing_verify:
 links:
   - title: Theme Setup
     url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
-    external: true
+#  - title: External Link
+#    url: http://mademistakes.com
+#    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
