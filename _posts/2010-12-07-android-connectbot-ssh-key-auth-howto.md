@@ -11,11 +11,17 @@ redirect_from:
   - /articles/android-connectbot-ssh-key-auth-howto.html
   - /0f3e/
 ---
-![ConnectBot running on HTC Aria from AT&T.](/images/0f3e/connectbot.htc.aria.300px.png)
+
+<figure>
+	<a href="/images/0f3e/connectbot.htc.aria.300px.png"><img src="/images/0f3e/connectbot.htc.aria.300px.png" alt=""></a>
+	<figcaption>ConnectBot running on HTC Aria from AT&T.</figcaption>
+</figure>
+
 
 [ConnectBot][] is an open source SSH client for Android. SSH provides secure access to a remote server. Both password and public key authentication are allowed.  A key can be created in ConnectBot for use with the server. The key can be disabled at any time.
 
 >Use [VX ConnectBot][vx] for a more updated Android SSH client. All steps from this guide still apply.
+
 [connectbot]:https://play.google.com/store/apps/details?id=org.connectbot
 [vx]:https://play.google.com/store/apps/details?id=sk.vx.connectbot
 <!--more-->
@@ -29,7 +35,9 @@ SSH server must be installed on the remote system. Key authentication is usually
     sudo apt-get install openssh-server
 
 # Start ConnectBot
-![](/images/0f3e/connectbot.home.png)
+<figure>
+	<a href="/images/0f3e/connectbot.home.png"><img src="/images/0f3e/connectbot.home.png" alt=""></a>
+</figure>
 
 ConnectBot home screen. There are no known hosts yet.
 
