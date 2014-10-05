@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: dda5bccc-dc11-4f24-b8ba-9087b1680678
 title: moving-from-amazon-ec2-to-s3
 name: moving-from-amazon-ec2-to-s3

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: f349fbd9-5fd8-49a6-a2d6-cccc0c8f6a1b
 title: Install Jekyll on Ubuntu 12.10
 name: install-jekyll-ubuntu-12-10

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: 7c60f526-81fa-4b5c-8cb1-29e9418a93d8
 shortid: 81fa
 title: Install Jekyll 2 on Ubuntu 14.04

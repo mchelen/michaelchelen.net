@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: 8490b1a5-8237-40cf-b96d-461bf9839474
 title: About michaelchelen.net
 name: about-michaelchelen-net

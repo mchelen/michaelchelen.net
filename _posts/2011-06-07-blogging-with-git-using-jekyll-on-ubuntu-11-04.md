@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: c6c404f0-00cc-4245-b535-450c1eb6fc51
 shortid: 00cc
 title: Blogging with Git using Jekyll on Ubuntu 11.04

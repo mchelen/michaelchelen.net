@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: 0820c5ef-8ab0-4f1a-8efb-77b6e1288645
 title: How to Setup a Virtual Development Environment with VirtualBox
 name: how-to-setup-a-virtual-development-environment-with-virtualbox

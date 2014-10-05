@@ -1,5 +1,5 @@
 --- 
-layout: article
+layout: post
 uuid: 5c8d4911-0ffa-4f0e-b707-a26dfd00d379
 shortid: 0ffa
 title: Git Wiki with Gollum and Smeagol

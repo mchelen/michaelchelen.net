@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: fd6bd400-93ac-46f7-8585-34351741ef8d
 shortid: 93ac
 title: Get Started Developing PHP With VirtualBox

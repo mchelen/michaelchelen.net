@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: 651f1da1-9c42-49bb-9001-be7b8f99b56d
 shortid: 9c42
 permalink: /9c42/install-jekyll-with-ruby-version-manager-on-ubuntu-11.10

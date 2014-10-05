@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 uuid: 49a15ea0-0b1e-4030-bdac-8c1c17bbfb5a
 title: Really Permanent Permalinks in Jekyll
 name: really-permanent-permalinks-jekyll
