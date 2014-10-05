@@ -4,6 +4,7 @@ disqus_shortname: michaelchelennet
 reading_time:     false
 words_per_minute: 200
 url:              //michaelchelen.net
+#url:              //localhost:4000
 
 # Owner/author information
 owner:
@@ -36,11 +37,11 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Theme Setup
-    url: /theme-setup
-#  - title: External Link
-#    url: http://mademistakes.com
-#    external: true
+#  - title: Fork
+#    url: /theme-setup
+  - title: Fork
+    url: https://github.com/mchelen/michaelchelen.net
+    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
