@@ -25,3 +25,31 @@ div.entry-content>p>img {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
+
+
+
+// better formatting for code blocks
+
+div.entry-content pre {
+	margin-bottom: 1.5em;
+	color: #d0d0d0;
+	border: 1px solid darken(@body-color, 5);
+	background-color: #272822;
+	.rounded(3px);
+	position: relative;
+	margin: 0;
+	padding: .5em;
+	padding-left: 1em;
+  padding-right: 1em;
+}    
+
+li { 
+	code {
+		.font-rem(16);
+	}
+}
+	
+pre {
+	.font-rem(16);
+}		
+
