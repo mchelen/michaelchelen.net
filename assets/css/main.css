@@ -5304,3 +5304,27 @@ body {
   color: #222222;
   background-color: #ffffff;
 }
+
+#post figure img {
+  display: block;
+  margin: 0.5em auto 1em;
+  border: 1px solid #607890;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px #888;
+     -moz-box-shadow: 5px 5px 5px #888;
+          box-shadow: 5px 5px 5px #888;
+}
+
+div.entry-content > p > img {
+  display: block;
+  margin: 0.5em auto 1em;
+  border: 1px solid #607890;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px #888;
+     -moz-box-shadow: 5px 5px 5px #888;
+          box-shadow: 5px 5px 5px #888;
+}
