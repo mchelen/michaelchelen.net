@@ -5329,6 +5329,10 @@ div.entry-content > p > img {
           box-shadow: 5px 5px 5px #888;
 }
 
+figcaption {
+  text-align: center;
+}
+
 div.entry-content pre {
   position: relative;
   padding: .5em;
