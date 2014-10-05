@@ -4,6 +4,7 @@ uuid: 7c60f526-81fa-4b5c-8cb1-29e9418a93d8
 shortid: 81fa
 title: Install Jekyll 2 on Ubuntu 14.04
 permalink: /81fa/install-jekyll-2-ubuntu-14-04
+description: Jekyll 2 was recently released and can be installed on Ubuntu 14.04 using apt-get and gem install.
 created_at: 2014-05-13
 updated_at: 2014-07-17
 categories: ubuntu jekyll ruby
