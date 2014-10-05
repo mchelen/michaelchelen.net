@@ -31,6 +31,7 @@ image:
   <div class="entry-content">
     {{ post.content | split:"<!--more-->" | first }}
   </div><!-- /.entry-content -->
+  <a href="{{ site.url }}{{ post.url }}">Continue reading&hellip;</a>
 </article><!-- /.hentry -->
 {% endfor %}
 
