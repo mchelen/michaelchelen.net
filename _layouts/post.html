@@ -56,7 +56,7 @@
         </div><!-- /.social-share -->{% endif %}
       </footer>
     </div><!-- /.entry-content -->
-    {% if site.disqus_shortname and page.comments %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+    {% if site.disqus_shortname and page.comments != false %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
     {% if site.related_posts.size %}
     <div class="read-more">
       {% for post in site.related_posts limit:1 %}
