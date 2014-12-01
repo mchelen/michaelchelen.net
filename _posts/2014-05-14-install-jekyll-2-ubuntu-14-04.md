@@ -51,7 +51,7 @@ Check that Jekyll has been successfully installed.
 The current version is `jekyll 2.5.2`.
 
 ## Recommended ##
-Additional gems can add features to Jekyll, such the [`github-pages`][gh-pages] gem which includes several other gems supported on Github.
+Additional gems can add features to Jekyll, such the [`github-pages`][gh-pages] gem which bundles together several gems supported by Github Pages.
 
     sudo gem install github-pages --no-rdoc --no-ri
    
@@ -108,7 +108,14 @@ The website can also be generated without starting a local server. The files are
 
     jekyll build
 
+### Updating Jekyll ###
+Jekyll can be updated similar to installation, by using the `gem update` command.
 
+    sudo gem update jekyll --no-rdoc --no-ri
+
+The same command can be used to update additional gems.
+
+    sudo gem update github-pages --no-rdoc --no-ri
 
 References
 ----
