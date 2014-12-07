@@ -33,7 +33,7 @@ Install ruby, the ruby development libraries, and the make command.
     sudo apt-get install ruby ruby-dev make gcc nodejs
 
 ### Javascript Workaround ###
-The installation of `nodejs` is required to work around an [issue][issue] where Jekyll requires a JavaScript runtime even if it will not be used.
+Installation of `nodejs` is required because of an [issue][issue] where Jekyll requires a JavaScript runtime even if it will not be used.
 
 [issue]:https://github.com/jekyll/jekyll/issues/2327
 
