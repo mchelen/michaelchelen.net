@@ -6,7 +6,7 @@ title: Install Jekyll 2 on Ubuntu 14.04
 permalink: /81fa/install-jekyll-2-ubuntu-14-04
 description: Jekyll 2 was recently released and can be installed on Ubuntu 14.04 using apt-get and gem install.
 created_at: 2014-05-13
-updated_at: 2014-11-30
+updated_at: 2014-12-05
 categories: ubuntu jekyll ruby
 tags: [Ubuntu, Jekyll, Ruby, Linux]
 published: true
@@ -19,7 +19,7 @@ Jekyll 2 was [recently released][jekyll2] and can be installed on Ubuntu 14.04 u
 
 Jekyll is a static site generator with a templating system that can be adapted for many types of websites, including blogs. It can be run on a server, or run locally and the generated files uploaded to a server. It is the default software used by Github Pages.
 
-*Tested with Jekyll 2.5.2 and Ubuntu Server 14.04*
+*Tested with Jekyll 2.5.2 and Ubuntu 14.04 and 14.10*
 
 [jekyll2]:http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/
 [ubunturepo]:http://packages.ubuntu.com/search?keywords=jekyll&searchon=names&suite=all&section=all
@@ -30,10 +30,10 @@ Jekyll is a static site generator with a templating system that can be adapted f
 
 Install ruby, the ruby development libraries, and the make command.
 
-    sudo apt-get install ruby ruby-dev make nodejs
+    sudo apt-get install ruby ruby-dev make gcc nodejs
 
 ### Javascript Workaround ###
-The installation of `nodejs` is required to work around an [issue][issue] where Jekyll requires a JavaScript runtime even if it will not be used. Alternatively you can install `therubyracer` however that is not covered in this guide.
+The installation of `nodejs` is required to work around an [issue][issue] where Jekyll requires a JavaScript runtime even if it will not be used.
 
 [issue]:https://github.com/jekyll/jekyll/issues/2327
 
