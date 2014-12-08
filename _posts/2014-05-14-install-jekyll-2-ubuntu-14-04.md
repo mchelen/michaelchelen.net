@@ -4,7 +4,7 @@ uuid: 7c60f526-81fa-4b5c-8cb1-29e9418a93d8
 shortid: 81fa
 title: Install Jekyll 2 on Ubuntu 14.04
 permalink: /81fa/install-jekyll-2-ubuntu-14-04
-description: Jekyll 2 was recently released and can be installed on Ubuntu 14.04 using apt-get and gem install.
+description: Jekyll 2 was recently released and can be installed on Ubuntu 14.04 or 14.10 using apt-get and gem install.
 created_at: 2014-05-13
 updated_at: 2014-12-05
 categories: ubuntu jekyll ruby
@@ -19,7 +19,7 @@ Jekyll 2 was [recently released][jekyll2] and can be installed on Ubuntu 14.04 u
 
 Jekyll is a static site generator with a templating system that can be adapted for many types of websites, including blogs. It can be run on a server, or run locally and the generated files uploaded to a server. It is the default software used by Github Pages.
 
-*Tested with Jekyll 2.5.2 and Ubuntu 14.04 and 14.10*
+*Tested with Jekyll 2.5.2 on Ubuntu 14.04 and 14.10*
 
 [jekyll2]:http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/
 [ubunturepo]:http://packages.ubuntu.com/search?keywords=jekyll&searchon=names&suite=all&section=all
