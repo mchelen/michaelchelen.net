@@ -4,7 +4,7 @@ disqus_shortname: michaelchelennet
 reading_time:     false
 words_per_minute: 200
 #url:              //michaelchelen.net
-url:              //localhost:4000
+url:              //localhost:4002
 
 # Owner/author information
 owner:
