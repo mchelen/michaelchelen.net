@@ -91,7 +91,25 @@ module.exports = function(grunt) {
         'assets/css/main.min.css',
         'assets/js/scripts.min.js'
       ]
-    }
+    },
+    favicons: {
+      options: {
+//      html: 'favico-template.html',
+//      firefox: true,
+      },
+      icons: {
+        src: 'src/logo-master.png',
+        dest: 'images'
+      }
+    },
+    copy: {
+      main: {
+        files: [
+          {src: ['images/favicon.ico'], dest: 'favicon.ico'},
+          {src: ['images/favicon.png'], dest: 'favicon.png'},
+        ]
+      },
+    },
   });
 
   // Load tasks
@@ -102,6 +120,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-favicons');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+
 
   // Register tasks
   grunt.registerTask('default', [
