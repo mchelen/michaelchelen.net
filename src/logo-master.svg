@@ -237,7 +237,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -251,7 +251,10 @@
        width="423.38831"
        height="374.15714"
        x="-656.88489"
-       y="17.100382" />
+       y="17.100382"
+       inkscape:export-filename="/home/mikechelen/doc/Dropbox/public/michaelchelen.net/src/logo-master.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect4586"
@@ -314,7 +317,10 @@
     <path
        style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:209.62521362000001091;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans;filter:url(#filter3889)"
        d="M -588.28125 -23.46875 A 104.82309 104.82309 0 0 0 -693.09375 81.34375 L -693.09375 346.71875 A 104.82309 104.82309 0 0 0 -588.28125 451.53125 L -297.90625 451.53125 A 104.82309 104.82309 0 0 0 -193.09375 346.71875 L -193.09375 81.34375 A 104.82309 104.82309 0 0 0 -297.90625 -23.46875 L -588.28125 -23.46875 z M -488.65625 85.1875 C -471.66427 85.187752 -456.63108 89.297123 -443.59375 97.5 C -430.55689 105.70336 -420.67604 117.2053 -413.9375 132 C -403.97684 116.76585 -392.18583 105.19164 -378.5625 97.28125 C -364.79328 89.224857 -349.71908 85.187752 -333.3125 85.1875 C -305.04139 85.187752 -283.51407 93.912353 -268.71875 111.34375 C -253.92425 128.7756 -246.50043 154.12323 -246.5 187.375 L -246.5 337.21875 L -325.625 337.21875 L -325.625 208.90625 C -325.47887 207.00208 -325.4066 205.01966 -325.40625 202.96875 C -325.26012 200.91811 -325.18785 197.99623 -325.1875 194.1875 C -325.18785 176.75602 -327.7484 164.13884 -332.875 156.375 C -338.00229 148.46503 -346.26205 144.53144 -357.6875 144.53125 C -372.62921 144.53144 -384.20342 150.66425 -392.40625 162.96875 C -400.46317 175.2736 -404.64481 193.08413 -404.9375 216.375 L -404.9375 337.21875 L -484.03125 337.21875 L -484.03125 208.90625 C -484.03145 181.66031 -486.37519 164.13884 -491.0625 156.375 C -495.75018 148.46503 -504.11346 144.53144 -516.125 144.53125 C -531.21304 144.53144 -542.85951 150.73651 -551.0625 163.1875 C -559.26575 175.49235 -563.37512 193.15835 -563.375 216.15625 L -563.375 337.21875 L -642.46875 337.21875 L -642.46875 91.125 L -563.375 91.125 L -563.375 127.15625 C -553.70716 113.24046 -542.63881 102.78148 -530.1875 95.75 C -517.59001 88.718999 -503.74432 85.187752 -488.65625 85.1875 z "
-       id="rect4527-3-1" />
+       id="rect4527-3-1"
+       inkscape:export-filename="/home/mikechelen/doc/Dropbox/public/michaelchelen.net/src/logo-master.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144" />
     <path
        style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:209.62521362;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
        d="m -598.11454,561.67315 a 104.82309,104.82309 0 0 0 -104.8125,104.8125 l 0,265.375 a 104.82309,104.82309 0 0 0 104.8125,104.81255 l 290.375,0 a 104.82309,104.82309 0 0 0 104.8125,-104.81255 l 0,-265.375 a 104.82309,104.82309 0 0 0 -104.8125,-104.8125 l -290.375,0 z"
